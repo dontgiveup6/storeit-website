@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $white-clr;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: $bg-lighter-clr;
+}
+
+.container {
+  position: relative;
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: $main-green-clr;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  border: none;
+  padding: 8px 20px;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  transition: all 0.35s;
+
+  &:hover {
+    transform: scale(0.98);
+    box-shadow: 0px 0px 10px $hover-green-cl;
+    background: $hover-green-cl;
+  }
+}
+
+.locale-switcher {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: 32px;
+  right: 13px;
+  font-size: 1.3rem;
+  opacity: 0.8;
+  list-style: none;
+  cursor: pointer;
+  z-index: 10;
+
+  .lang-btn {
+    text-decoration: none;
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      color: $hover-green-cl;
+    }
+  }
+
+  &:hover button {
+    display: block;
+  }
+}
+
+.locale-switcher-fixed-in {
+  position: fixed;
+  i {
+    color: $bg-lighter-clr;
+  }
+
+  button {
+    color: $bg-lighter-clr;
+  }
+}
+.locale-switcher-clicked-fixed-in {
+  position: fixed;
+  i {
+    color: #eee;
+  }
+
+  button {
+    color: #eee;
+  }
+}
+
+.menu {
+  z-index: 10;
+  padding: 5px 7px;
+  border-radius: 50px;
+  opacity: 0.8;
+  display: none;
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  cursor: pointer;
+
+  &:hover i {
+    color: $hover-green-cl;
+  }
+}
+
+.menu-fixed-in {
+  position: fixed;
+  i {
+    color: $bg-lighter-clr;
+  }
+}
+.menu-clicked-fixed-in {
+  position: fixed;
+  i {
+    color: #eee;
+  }
+}
+
+.in-fixed {
+  z-index: 5;
+  height: 90px;
+  background-color: transparent;
+  width: 100%;
+  position: absolute;
+  transition: all 0.35s;
+  box-shadow: 0px 15px 10px -15px $bg-dark-clr;
+
+  .fixed {
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &:hover {
+    box-shadow: 0px 5px 10px 1px $bg-dark-clr;
+  }
+}
+
+.nav {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .navbar {
+    align-items: center;
+    display: flex;
+
+    a {
+      font-size: 0.95rem;
+      text-decoration: none;
+
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+
+      &:hover {
+        color: $hover-green-cl;
+      }
+    }
+  }
+}
+
+.fixed-in {
+  position: fixed;
+  background-color: #ffffff;
+  .fixed {
+    .nav {
+      a {
+        color: $bg-lighter-clr;
+        font-weight: 500;
+      }
+
+      a:hover {
+        color: $hover-green-cl;
+      }
+    }
+  }
+}
+
+.logo-fixed {
+  display: none;
+}
+
+.conclude {
+  width: 100%;
+  background-color: $bg-lighter-clr;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    a:not(:last-child) {
+      font-size: 0.8rem;
+      text-decoration: none;
+      margin-bottom: 10px;
+      font-weight: 400;
+
+      &:hover {
+        color: $hover-green-cl;
+      }
+    }
+
+    .demo {
+      margin-top: 10px;
+      background-color: $text-clr;
+      color: $bg-lighter-clr;
+      font-weight: 600;
+      border: 0;
+      padding: 5px 25px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+
+    img {
+      height: 35px;
+      transition: 0.5s all;
+    }
+
+    a:hover img {
+      transform: scale(1.1);
+    }
+  }
+}
+
+footer {
+  background-color: $bg-dark-clr;
+  padding: 15px;
+  text-align: center;
+}

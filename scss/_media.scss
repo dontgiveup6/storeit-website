@@ -1,0 +1,380 @@
+@media (max-width: 1300px) {
+  .nav {
+    .navbar {
+      display: none;
+    }
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .locale-switcher {
+    right: 70px;
+  }
+
+  .why-storeit {
+    .security-section {
+      .security-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+
+    .quality-section {
+      .quality-grid {
+        width: 100%;
+      }
+    }
+  }
+
+  .nav {
+    .navbar-menu-clicked {
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      background-color: $bg-lighter-clr;
+      z-index: 20;
+      animation: menu-animation;
+      animation-duration: 0.4s;
+      animation-fill-mode: forwards;
+    }
+
+    .navbar {
+      a {
+        &:not(:last-child) {
+          margin-right: 0;
+          color: #eee;
+          font-weight: 500;
+          font-size: 1.1rem;
+          margin-bottom: 30px;
+        }
+
+        &:hover {
+          color: $hover-green-cl;
+        }
+      }
+    }
+  }
+
+  .service-overview {
+    &-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .main-title {
+    margin-top: 200px;
+  }
+  .services-content img {
+    width: 60px;
+    height: 55px;
+  }
+
+  .services-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .process-one {
+    padding-bottom: 50px;
+
+    .row-1,
+    .row-2,
+    .row-3 {
+      display: none;
+    }
+
+    .s-screen {
+      display: flex;
+    }
+  }
+
+  .process-two {
+    .row-d {
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+
+      .item {
+        .svg-b {
+          display: none;
+        }
+
+        .svg-s {
+          display: block;
+          position: absolute;
+          top: 110%;
+          left: 50%;
+        }
+      }
+    }
+  }
+
+  .why-storeit {
+    .confidentiality-section {
+      .confidentiality-grid {
+        width: 70%;
+      }
+    }
+  }
+
+  .know {
+    .know-flex {
+      flex-direction: column;
+      gap: 50px;
+      justify-content: center;
+
+      img {
+        width: 70%;
+      }
+    }
+  }
+
+  .help {
+    form {
+      width: 70%;
+    }
+  }
+
+  .service-services {
+    &-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .about-company {
+    &-subtitle {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .service-clients {
+    .slider {
+      .img-1 {
+        display: none;
+      }
+    }
+  }
+
+  .about-building {
+    &-holder {
+      img {
+        height: auto;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      gap: 50px;
+
+      .building-about {
+        max-width: 100%;
+
+        .about-building-shield {
+          justify-content: space-around;
+
+          .shield {
+            width: 30%;
+            span {
+              font-size: 0.85rem;
+            }
+          }
+        }
+      }
+    }
+    &-holder:first-child {
+      flex-direction: column-reverse;
+      align-items: center;
+      width: 100%;
+      gap: 50px;
+
+      h1 {
+        text-align: right;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    height: auto;
+    padding: 30px 0;
+    &-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .why-storeit {
+    .security-section {
+      .security-grid {
+        .security-item {
+          img {
+            height: 60px;
+          }
+        }
+      }
+    }
+
+    .quality-section {
+      .quality-grid {
+        grid-template-columns: 1fr 1fr;
+        .quality-item {
+          img {
+            height: 60px;
+          }
+        }
+      }
+    }
+
+    .confidentiality-section {
+      .confidentiality-grid {
+        .confidentiality-item {
+          img {
+            height: 60px;
+          }
+        }
+      }
+    }
+  }
+
+  .help {
+    form {
+      width: 100%;
+    }
+  }
+
+  .conclude {
+    .container {
+      grid-gap: 50px;
+      grid-template-columns: 1fr;
+      justify-content: center;
+    }
+    .conclude-logo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .social {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 670px) {
+  .benefits {
+    &-grid {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 30px;
+    }
+  }
+
+  .why-storeit {
+    .security-section {
+      .security-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .confidentiality-section {
+      .confidentiality-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  .know {
+    .know-flex {
+      img {
+        width: 290px;
+      }
+    }
+  }
+
+  .service-overview {
+    &-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .service-services {
+    &-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .service-clients {
+    .slider {
+      .img-2 {
+        right: 0;
+        position: absolute;
+        z-index: 1;
+      }
+      .slide {
+        &-content {
+          padding: 20px 20px 0;
+
+          p {
+            color: black;
+            font-weight: 500;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .know {
+    &-flex {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .help {
+    form {
+      .form {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  .service-overview {
+    &-grid {
+      &-item {
+        p {
+          font-size: 0.9rem;
+          font-weight: 600;
+        }
+        img {
+          height: 55px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-height: 750px) {
+  .showcase {
+    height: auto;
+  }
+  .sub-title {
+    margin-bottom: 40px;
+  }
+}

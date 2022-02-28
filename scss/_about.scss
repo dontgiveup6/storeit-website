@@ -1,0 +1,176 @@
+.about-company {
+  background-color: #fff;
+  width: 100%;
+  padding: 50px 0;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-title {
+    font-size: clamp(1.8rem, 3vw, 2.2rem);
+    font-weight: 700;
+    text-align: center;
+    color: #000;
+  }
+
+  &-subtitle {
+    margin: 20px 0 40px 0;
+    font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+    color: #000;
+    font-family: 600;
+    max-width: 60%;
+    text-align: center;
+  }
+
+  video {
+    cursor: pointer;
+    width: 100%;
+  }
+}
+
+.about-building {
+  background-color: #fff;
+  padding: 40px 0 80px 0;
+  width: 100%;
+
+  * {
+    color: #000;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-holder {
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+      font-size: clamp(1.2rem, 1.7vw, 1.5rem);
+      margin-bottom: 20px;
+    }
+    p {
+      color: $bg-lighter-clr;
+      margin-bottom: 50px;
+    }
+
+    img {
+      height: 230px;
+    }
+
+    .building-about {
+      max-width: 50%;
+
+      .about-building-shield {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+
+        .shield {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+
+          img {
+            margin-bottom: 10px;
+            width: 40px;
+            height: 50px;
+          }
+
+          span {
+            color: $bg-lighter-clr;
+
+            font-weight: 600;
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
+  &-holder:first-child {
+    margin-bottom: 150px;
+    h1 {
+      font-size: clamp(1.8rem, 3vw, 2.2rem);
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: $bg-lighter-clr;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.mission {
+  padding: 40px 0;
+  background-color: #fff;
+  * {
+    color: #000;
+  }
+  &-title {
+    font-size: clamp(1.8rem, 3vw, 2.2rem);
+    font-weight: 700;
+    text-align: center;
+    color: #000;
+    margin-bottom: 10px;
+  }
+
+  &-subtitle {
+    font-size: clamp(1rem, 1.7vw, 1.2rem);
+    font-weight: 600;
+    text-align: center;
+  }
+
+  &-grid {
+    margin-top: 60px;
+    display: grid;
+    grid-gap: 20%;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    width: 100%;
+
+    .mission-item {
+      padding: 20px 80px;
+      background-color: #f6f6f6;
+      position: relative;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+
+      p {
+        z-index: 1;
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+
+      .mission-logo-left {
+        top: 0;
+        left: 0;
+        height: 100%;
+        position: absolute;
+      }
+      .mission-logo-right {
+        top: 0;
+        right: 0;
+        height: 100%;
+        position: absolute;
+      }
+      .mission-img {
+        width: 250px;
+        z-index: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STOREIT - Service</title>
+    <script
+      src="https://kit.fontawesome.com/b10cc040c6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/png" href="images/shared/browser-icon.png" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body onload="loading()">
+    <ul class="locale-switcher locale-switcher-fixed-in">
+      <div>
+        <i class="fa fa-globe"></i>
+        <i class="fa fa-caret-down"></i>
+      </div>
+      <button id="lang-en" class="lang-btn" data-locale="en">English</button>
+      <button id="lang-bg" class="lang-btn" data-locale="bg">Български</button>
+    </ul>
+
+    <div class="menu menu-fixed-in">
+      <i class="toggler fas fa-bars fa-2x"></i>
+    </div>
+
+    <div class="in-fixed fixed-in">
+      <div class="fixed">
+        <div class="nav">
+          <a class="just-logo" href="index.html"
+            ><img src="images/shared/fixed-logo.svg" alt="logo" srcset=""
+          /></a>
+          <a class="logo-fixed" href="index.html"
+            ><img src="images/shared/fixed-logo.svg" alt="logo" srcset=""
+          /></a>
+          <nav class="navbar">
+            <a class="navbar-links" href="about.html">About Us</a>
+            <a class="navbar-links" href="service.html">Service</a>
+            <a class="navbar-links" href="#requestPortal">Request Portal</a>
+            <a class="navbar-links" href="#contact">Contact</a>
+            <button class="btn">Lets Chat</button>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <header class="service-showcase">
+      <img src="images/service/service-showcase-bg.png" alt="" />
+      <div class="container">
+        <h1 data-aos="zoom-out-right" data-aos-duration="1000">SERVICE</h1>
+        <h3
+          data-aos="fade-up"
+          data-aos-delay="500"
+          data-aos-duration="1000"
+          data-aos-easing="ease-out-cubic"
+        >
+          LOREM IPSUN DOLOR SIT AMET CONSTIUS.
+        </h3>
+      </div>
+    </header>
+    <section class="service-overview">
+      <div class="container">
+        <h3
+          data-aos="fade-down"
+          data-aos-duration="500"
+          class="service-overview-title"
+        >
+          Leaders in Documents & Records Management Services
+        </h3>
+        <p
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="500"
+          class="service-overview-para"
+        >
+          Access removes the daily hassle of managing documents with end-to-end
+          records management solutions.Not only will we securely store all your
+          vital recordsm but our records management services let you:
+        </p>
+        <div class="service-overview-grid">
+          <div
+            data-aos="flip-left"
+            data-aos-duration="500"
+            class="service-overview-grid-item"
+          >
+            <img src="images/service/service-overview-1.png" alt="" />
+            <p>Save physical space</p>
+          </div>
+          <div
+            data-aos="flip-left"
+            data-aos-duration="500"
+            data-aos-delay="100"
+            class="service-overview-grid-item"
+          >
+            <img src="images/service/service-overview-2.png" alt="" />
+            <p>Organize physical and electronic records</p>
+          </div>
+          <div
+            data-aos="flip-left"
+            data-aos-duration="500"
+            data-aos-delay="200"
+            class="service-overview-grid-item"
+          >
+            <img src="images/service/service-overview-3.png" alt="" />
+            <p>Protect your assets for the full document lifecycle</p>
+          </div>
+          <div
+            data-aos="flip-left"
+            data-aos-duration="500"
+            data-aos-delay="300"
+            class="service-overview-grid-item"
+          >
+            <img src="images/service/service-overview-4.png" alt="" />
+            <p>Control your flow of information</p>
+          </div>
+          <div
+            data-aos="flip-left"
+            data-aos-duration="500"
+            data-aos-delay="400"
+            class="service-overview-grid-item"
+          >
+            <img src="images/service/service-overview-5.png" alt="" />
+            <p>
+              Grand easy records access to the right employees and stakeholders
+            </p>
+          </div>
+          <div
+            data-aos="flip-left"
+            data-aos-duration="500"
+            data-aos-delay="500"
+            class="service-overview-grid-item"
+          >
+            <img src="images/service/service-overview-6.png" alt="" />
+            <p>Maintain full regulatory compliance no matter your industry</p>
+          </div>
+          <div
+            data-aos="flip-left"
+            data-aos-duration="500"
+            data-aos-delay="600"
+            class="service-overview-grid-item"
+          >
+            <img src="images/service/service-overview-7.png" alt="" />
+            <p>
+              Portable hand-held scanners that provide point-to-point tracking
+              and chain of custody
+            </p>
+          </div>
+          <div
+            data-aos="flip-left"
+            data-aos-duration="500"
+            data-aos-delay="700"
+            class="service-overview-grid-item"
+          >
+            <img src="images/service/service-overview-8.png" alt="" />
+            <p>Barcode-based container-and-tape-level invetory tracking</p>
+          </div>
+          <div
+            data-aos="flip-left"
+            data-aos-duration="500"
+            data-aos-delay="800"
+            class="service-overview-grid-item"
+          >
+            <img src="images/service/service-overview-9.png" alt="" />
+            <p>Secure vehicles nad highly trained transportation specialists</p>
+          </div>
+          <div
+            data-aos="flip-left"
+            data-aos-duration="500"
+            data-aos-delay="900"
+            class="service-overview-grid-item"
+          >
+            <img src="images/service/service-overview-10.png" alt="" />
+            <p>High security buildings with restricted access</p>
+          </div>
+          <div
+            data-aos="flip-left"
+            data-aos-duration="500"
+            data-aos-delay="1000"
+            class="service-overview-grid-item"
+          >
+            <img src="images/service/service-overview-11.png" alt="" />
+            <p>24/7 emergency document management services</p>
+          </div>
+          <div
+            data-aos="flip-left"
+            data-aos-duration="500"
+            data-aos-delay="1100"
+            class="service-overview-grid-item"
+          >
+            <img src="images/service/service-overview-12.png" alt="" />
+            <p>PRISM+ Certified</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="service-services">
+      <div class="container">
+        <div class="service-services-grid">
+          <div class="service-services-grid-item">
+            <h3>24/7 Access with Records Management Software</h3>
+            <p>
+              Business never stops. Demand for information across your
+              enterprise never slows down. Your document management system must
+              work at your speed and on your schedule.
+            </p>
+          </div>
+          <div class="service-services-grid-item">
+            <h3>Rapid Document Delivery</h3>
+            <p>
+              You need more than electronic access. You need rapid access to
+              your physical documents.
+            </p>
+            <ul>
+              <li>Physical and electronic delivery of documents</li>
+              <li>Same-day priority rush delivery</li>
+              <li>Next-day delivery</li>
+              <li>Scan-on-demand and document imaging services</li>
+            </ul>
+          </div>
+          <div class="service-services-grid-item">
+            <h3>iStoreIt</h3>
+            <p>
+              iStoreIt gives you full control to manage and govern your secure
+              file storage.
+            </p>
+            <ul>
+              <li>Simple search and retrieve functions</li>
+              <li>Easy user interface</li>
+              <li>Version Management</li>
+              <li>Instant service and records request</li>
+            </ul>
+            <a href="#">Request a Demo</a>
+          </div>
+          <div class="service-services-grid-item">
+            <h3>Specialized Secure Storage Services</h3>
+            <p>
+              Is your information not stored on paper? We also have the ability
+              to maintain the integrity and value of your vital files by storing
+              magnetic tape backups, medical x-rays, historical film, and
+              photographs in a secure Access vault.
+            </p>
+            <p>
+              For more specialized secure storage needs, learn about our offsite
+              tape vaults and underground vaults.
+            </p>
+          </div>
+          <div class="service-services-grid-item">
+            <h3>Complete Records Lifecycle Management</h3>
+            <p>
+              Some documents need to be kept forever. Some reach the end of
+              their lifecycle then need to be destroyed. Our secure, defensible
+              destruction methods that meet all regulatory standards and keep
+              you safe.
+            </p>
+            <p>
+              Certified, secure document destruction is part of records
+              management protection.
+            </p>
+          </div>
+          <div class="service-services-grid-item">
+            <h3>Remote Work Transformation</h3>
+            <p>
+              In order to enable this transformation you need controled access
+              for your employees and version control
+            </p>
+            <ul>
+              <li>Enablement</li>
+              <li>Cut hiring expenses / No physical presence and location</li>
+              <li>Scale Business</li>
+              <li>Control - over information flow</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="service-clients">
+      <div class="container">
+        <h1>Our Clients</h1>
+        <div class="slider">
+          <img
+            class="img-1"
+            src="images/service/service-clients-1.png"
+            alt=""
+          />
+          <div class="slide">
+            <div class="slide-content current">
+              <h3>George Max</h3>
+              <h4><span>Corporate Inc.</span> - General Manager</h4>
+              <p>
+                The solutions offered by StoreIT are extremely efficient and the
+                result is visible within a month! I experience complete security
+                with their services for my business.
+              </p>
+            </div>
+            <div class="slide-content">
+              <h3>John Doe</h3>
+              <h4><span>Creative Odds</span> - SEO</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis
+                autem asperiores quos blanditiis expedita exercitationem, fugit
+                a ratione perspiciatis consequuntur.
+              </p>
+            </div>
+            <div class="slide-content">
+              <h3>Jane Doe</h3>
+              <h4><span>Momentum Inc.</span> - Project Manager</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                quasi ex exercitationem corporis fuga ducimus.
+              </p>
+            </div>
+          </div>
+          <img
+            class="img-2"
+            src="images/service/service-clients-2.png"
+            alt=""
+          />
+
+          <div class="slider-buttons">
+            <i class="prev fa fa-arrow-circle-o-left"></i>
+            <i class="next fa fa-arrow-circle-o-right"></i>
+          </div>
+        </div>
+
+        <div class="bullet-points"></div>
+      </div>
+    </section>
+    <section class="questions">
+      <div class="container">
+        <h1 class="questions-title">FAQ</h1>
+        <div class="faq">
+          <div class="faq-questions">
+            <div class="faq-head">
+              <h2>Why do I need to keep important documents and records?</h2>
+            </div>
+            <div class="faq-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime
+                hic sunt ducimus, enim quo ex nam mollitia ratione numquam
+                explicabo!
+              </p>
+            </div>
+          </div>
+          <div class="faq-questions">
+            <div class="faq-head">
+              <h2>
+                What are the benefits of a professional record management
+                solution?
+              </h2>
+            </div>
+            <div class="faq-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime
+                hic sunt ducimus, enim quo ex nam mollitia ratione numquam
+                explicabo!
+              </p>
+            </div>
+          </div>
+          <div class="faq-questions">
+            <div class="faq-head">
+              <h2>How is this better than putting records in a warehouse?</h2>
+            </div>
+            <div class="faq-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
+                ullam quaerat ut odit, autem voluptas? Mollitia earum at
+                ratione, asperiores aliquam, dolorem fugiat iste sed modi quod
+                voluptatem perferendis iusto.
+              </p>
+            </div>
+          </div>
+          <div class="faq-questions">
+            <div class="faq-head">
+              <h2>
+                Can a document management solution help with business continuity
+                and disaster recovery?
+              </h2>
+            </div>
+            <div class="faq-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                voluptas aspernatur consequuntur earum, autem iusto ducimus
+                nostrum impedit amet ad nisi vel minima tenetur reiciendis,
+                commodi laudantium harum beatae possimus animi veniam
+                perferendis adipisci nobis.
+              </p>
+            </div>
+          </div>
+          <div class="faq-questions">
+            <div class="faq-head">
+              <h2>Do you store and manage other types of media records?</h2>
+            </div>
+            <div class="faq-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime
+                hic sunt ducimus, enim quo ex nam mollitia ratione numquam
+                explicabo!
+              </p>
+            </div>
+          </div>
+          <div class="faq-questions">
+            <div class="faq-head">
+              <h2>What kind of documents and records do you store?</h2>
+            </div>
+            <div class="faq-body">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                quibusdam pariatur voluptas hic recusandae? Sunt aspernatur
+                laudantium ex laboriosam accusantium. Laborum eum atque esse
+                cupiditate recusandae. Assumenda sequi iusto vitae a quasi
+                quidem veniam veritatis voluptate quas ut, voluptatem cum,
+                error, repellendus voluptatibus doloremque optio nesciunt eos
+                minus quam hic!
+              </p>
+            </div>
+          </div>
+          <div class="faq-questions">
+            <div class="faq-head">
+              <h2>
+                What industries do you help maintain regulatory compliance?
+              </h2>
+            </div>
+            <div class="faq-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime
+                hic sunt ducimus, enim quo ex nam mollitia ratione numquam
+                explicabo!
+              </p>
+            </div>
+          </div>
+          <div class="faq-questions">
+            <div class="faq-head">
+              <h2>Do you securely transport my documents?</h2>
+            </div>
+            <div class="faq-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime
+                hic sunt ducimus, enim quo ex nam mollitia ratione numquam
+                explicabo!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="conclude">
+      <div class="container">
+        <div class="conclude-logo">
+          <img src="images/shared/conclude-logo.svg" alt="" />
+        </div>
+        <ul class="conclude-links">
+          <a href="about.html">About Us</a>
+          <a href="service.html">Service</a>
+          <a href="#requestPortal">Request Portal</a>
+          <a href="#contact">Contact</a>
+          <a href="#" class="demo">Request Demo</a>
+        </ul>
+        <div class="social">
+          <a href="#"><img src="images/shared/facebook.svg" alt="" /></a>
+          <a href="#"><img src="images/shared/twitter.svg" alt="" /></a>
+          <a href="#"><img src="images/shared/linkedin.svg" alt="" /></a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; StoreIT 2022</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/shared.js"></script>
+    <script src="js/service.js"></script>
+  </body>
+</html>
