@@ -3,8 +3,8 @@ AOS.init();
 const slides = document.querySelectorAll(".slide-content");
 const faq = document.querySelectorAll(".faq-head");
 
-const prev = document.querySelector(".prev");
-const next = document.querySelector(".next");
+// const prev = document.querySelector(".prev");
+// const next = document.querySelector(".next");
 const bulletPoints = document.querySelector(".bullet-points");
 let current = document.querySelector(".current");
 let pointsHTML = "";
@@ -12,14 +12,14 @@ let auto = true;
 let intervalTime = 5000;
 let slideInterval, points, clickedPoint;
 
-next.addEventListener("click", () => {
-  nextSlide();
-  clearInt();
-});
-prev.addEventListener("click", () => {
-  prevSlide();
-  clearInt();
-});
+// next.addEventListener("click", () => {
+//   nextSlide();
+//   clearInt();
+// });
+// prev.addEventListener("click", () => {
+//   prevSlide();
+//   clearInt();
+// });
 
 const nextSlide = () => {
   prepareDom();
@@ -93,7 +93,6 @@ if (auto) {
 faq.forEach((q) => {
   q.addEventListener("click", () => {
     q.parentElement.classList.toggle("active");
-    q.nextElementSibling.classList.toggle("active-body");
   });
 });
 

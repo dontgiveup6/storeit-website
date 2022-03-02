@@ -69,13 +69,14 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  font-weight: 700;
 }
 
 .locale-switcher .lang-btn:hover {
   color: #71b15c;
 }
 
-.locale-switcher:hover button {
+.locale-switcher .show-btn {
   display: block;
 }
 
@@ -155,8 +156,8 @@ body {
 }
 
 .in-fixed:hover {
-  -webkit-box-shadow: 0px 5px 10px 1px #2d3233;
-          box-shadow: 0px 5px 10px 1px #2d3233;
+  -webkit-box-shadow: 0px 5px 10px -3px #2d3233;
+          box-shadow: 0px 5px 10px -3px #2d3233;
 }
 
 .nav {
@@ -204,6 +205,10 @@ body {
   font-weight: 500;
 }
 
+.fixed-in .fixed .nav .on-page {
+  color: #64a84d;
+}
+
 .fixed-in .fixed .nav a:hover {
   color: #71b15c;
 }
@@ -214,7 +219,8 @@ body {
 
 .conclude {
   width: 100%;
-  background-color: #4b535b;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4b535b), to(#2d3233));
+  background: linear-gradient(#4b535b, #2d3233);
   padding: 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -277,6 +283,7 @@ body {
   color: #4b535b;
   font-weight: 600;
   border: 0;
+  border-radius: 5px;
   padding: 5px 25px;
   text-decoration: none;
   cursor: pointer;
@@ -434,11 +441,17 @@ footer {
 }
 
 .process-one {
+  background: -webkit-gradient(linear, left top, left bottom, from(#2d3233), color-stop(40%, #4b535b));
+  background: linear-gradient(#2d3233, #4b535b 40%);
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 200px;
+}
+
+.process-one .container {
+  padding: 10px;
   width: 100%;
   max-width: 1300px;
-  margin: 0 auto;
-  padding: 10px;
-  padding-bottom: 200px;
 }
 
 .process-one-title {
@@ -630,7 +643,9 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 100px 0;
+  padding: 100px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4b535b), color-stop(80%, #2d3233));
+  background: linear-gradient(#4b535b, #2d3233 80%);
 }
 
 .benefits-title {
@@ -787,7 +802,8 @@ footer {
 }
 
 .why-storeit .quality-section {
-  background-color: #4b535b;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2d3233), to(#4b535b));
+  background: linear-gradient(#2d3233, #4b535b);
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -857,6 +873,8 @@ footer {
 
 .why-storeit .confidentiality-section {
   background-color: #8b9197;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4b535b), to(#8b9197));
+  background: linear-gradient(#4b535b, #8b9197);
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -925,7 +943,8 @@ footer {
 
 .know {
   padding: 100px 0;
-  background-color: #f6f6f6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8b9197), color-stop(40%, #f6f6f6));
+  background: linear-gradient(#8b9197, #f6f6f6 40%);
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -978,7 +997,8 @@ footer {
 }
 
 .help {
-  background-color: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), color-stop(40%, #ffffff));
+  background: linear-gradient(#f6f6f6, #ffffff 40%);
   width: 100%;
   padding: 100px 0;
   display: -webkit-box;
@@ -1082,7 +1102,7 @@ footer {
   height: 30px;
   width: 100%;
   border: 1px solid #cccbcb;
-  border-radius: 2px;
+  border-radius: 10px;
   padding: 0 5px;
   outline: none;
 }
@@ -1094,11 +1114,12 @@ footer {
 }
 
 .help input[type="button"] {
+  border-radius: 5px;
   background-color: #4b535b;
   color: #ffffff;
   margin-top: 20px;
   height: auto;
-  width: 200px;
+  width: 150px;
   font-size: 1.1rem;
   font-weight: 500;
   padding: 10px 5px;
@@ -1138,7 +1159,7 @@ footer {
   margin: 20px 0 40px 0;
   font-size: clamp(0.9rem, 1.8vw, 1.1rem);
   color: #000;
-  font-family: 600;
+  font-weight: 500;
   max-width: 60%;
   text-align: center;
 }
@@ -1291,6 +1312,10 @@ footer {
   width: 100%;
 }
 
+.mission-grid .mission-item:first-child {
+  border-bottom: 4px solid #64a84d;
+}
+
 .mission-grid .mission-item {
   padding: 20px 80px;
   background-color: #f6f6f6;
@@ -1310,12 +1335,15 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  border-radius: 20px;
+  border-bottom: 4px solid #4b535b;
 }
 
 .mission-grid .mission-item p {
+  margin-top: 20px;
   z-index: 1;
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .mission-grid .mission-item .mission-logo-left {
@@ -1323,6 +1351,7 @@ footer {
   left: 0;
   height: 100%;
   position: absolute;
+  border-radius: 20px;
 }
 
 .mission-grid .mission-item .mission-logo-right {
@@ -1330,11 +1359,86 @@ footer {
   right: 0;
   height: 100%;
   position: absolute;
+  border-radius: 20px;
 }
 
 .mission-grid .mission-item .mission-img {
   width: 250px;
   z-index: 1;
+}
+
+.about-certification {
+  background-color: #fff;
+  padding: 50px 0 100px;
+  width: 100%;
+}
+
+.about-certification * {
+  color: #000;
+}
+
+.about-certification-title {
+  font-size: clamp(1.8rem, 3vw, 2.2rem);
+  font-weight: 700;
+  text-align: center;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.about-certification-subtitle {
+  font-size: clamp(1rem, 1.7vw, 1.2rem);
+  font-weight: 600;
+  text-align: center;
+}
+
+.about-certification .certification-flex {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.about-certification .certification-flex .certification-item {
+  border-bottom: 4px solid #4b535b;
+  background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px 30px;
+  border-radius: 20px;
+}
+
+.about-certification .certification-flex .certification-item img {
+  width: 80px;
+}
+
+.about-certification .certification-flex .certification-item p {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.about-certification .certification-flex .certification-item:not(:nth-child(2)) {
+  border-bottom: 4px solid #64a84d;
 }
 
 .service-showcase {
@@ -1544,6 +1648,10 @@ footer {
   color: #000;
 }
 
+.service-services-grid-item:not(:nth-child(3)) ul {
+  margin: 20px 0;
+}
+
 .service-services-grid-item:not(:first-child) {
   padding: 25px;
   background-color: #f6f6f6;
@@ -1565,7 +1673,6 @@ footer {
 }
 
 .service-services-grid-item:not(:first-child) ul {
-  margin: 10px 0;
   list-style: none;
 }
 
@@ -1662,33 +1769,6 @@ footer {
           justify-content: space-between;
 }
 
-.service-clients .slider .slider-buttons {
-  z-index: 3;
-  left: 50%;
-  top: 85%;
-  position: absolute;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.service-clients .slider .slider-buttons i {
-  cursor: pointer;
-  color: #64a84d;
-  font-size: 2rem;
-}
-
-.service-clients .slider .slider-buttons i:hover {
-  font-weight: 600;
-}
-
-.service-clients .slider .slider-buttons .prev {
-  margin-right: 20px;
-}
-
-.service-clients .slider .slider-buttons .next {
-  margin-left: 20px;
-}
-
 .service-clients .slider img {
   height: 100%;
 }
@@ -1754,6 +1834,8 @@ footer {
 
 .questions {
   background-color: #e9f1e6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(30%, #e9f1e6));
+  background: linear-gradient(#fff, #e9f1e6 30%);
   padding: 70px 0;
   width: 100%;
 }
@@ -1775,11 +1857,11 @@ footer {
 
 .questions .faq-questions {
   width: 100%;
-  border-bottom: 2px solid #000;
+  border-bottom: 1px solid #000;
 }
 
 .questions .faq-questions .faq-head {
-  padding: 20px 0;
+  padding: 20px 10px;
   cursor: pointer;
   position: relative;
 }
@@ -1789,13 +1871,13 @@ footer {
 }
 
 .questions .faq-questions .faq-head h2 {
-  font-size: clamp(1.15rem, 1.7vw, 1.4rem);
+  font-size: clamp(1rem, 1.7vw, 1.3rem);
   font-weight: 600;
-  width: 85%;
+  width: 90%;
 }
 
 .questions .faq-questions .faq-head::after {
-  padding: 20px 0;
+  padding: 20px 10px;
   content: "\02795";
   position: absolute;
   overflow: hidden;
@@ -1815,7 +1897,7 @@ footer {
 .questions .faq .active .faq-body {
   width: 100%;
   display: block;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 500;
   padding: 20px 0;
 }
@@ -1850,46 +1932,8 @@ footer {
   }
 }
 
-@-webkit-keyframes menu-animation {
-  from {
-    opacity: 0;
-    right: -200px;
-  }
-  to {
-    opacity: 0.97;
-    right: 0;
-  }
-}
-
-@keyframes menu-animation {
-  from {
-    opacity: 0;
-    right: -200px;
-  }
-  to {
-    opacity: 0.97;
-    right: 0;
-  }
-}
-
 @media (max-width: 1300px) {
   .nav .navbar {
-    display: none;
-  }
-  .menu {
-    display: block;
-  }
-  .locale-switcher {
-    right: 70px;
-  }
-  .why-storeit .security-section .security-grid {
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-  }
-  .why-storeit .quality-section .quality-grid {
-    width: 100%;
-  }
-  .nav .navbar-menu-clicked {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1905,17 +1949,31 @@ footer {
             align-items: center;
     position: fixed;
     top: 0;
-    left: 0;
+    right: -200px;
     height: 100vh;
-    width: 100vw;
-    background-color: #4b535b;
+    width: 200px;
+    opacity: 0;
+    background-color: black;
     z-index: 20;
-    -webkit-animation: menu-animation;
-            animation: menu-animation;
-    -webkit-animation-duration: 0.4s;
-            animation-duration: 0.4s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    -webkit-transition: 1s all;
+    transition: 1s all;
+  }
+  .menu {
+    display: block;
+  }
+  .locale-switcher {
+    right: 70px;
+  }
+  .why-storeit .security-section .security-grid {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .why-storeit .quality-section .quality-grid {
+    width: 100%;
+  }
+  .nav .navbar-menu-clicked {
+    opacity: 0.9;
+    right: 0;
   }
   .nav .navbar a:not(:last-child) {
     margin-right: 0;
@@ -1930,6 +1988,9 @@ footer {
   .service-overview-grid {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+  }
+  .mission-grid {
+    grid-gap: 40px;
   }
 }
 
@@ -2001,6 +2062,13 @@ footer {
   }
   .about-company-subtitle {
     max-width: 100%;
+  }
+  .mission-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .mission-grid .mission-item {
+    padding: 20px;
   }
 }
 
@@ -2107,6 +2175,12 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .about-certification .certification-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media (max-width: 670px) {
@@ -2146,6 +2220,12 @@ footer {
     color: black;
     font-weight: 500;
     font-size: 0.8rem;
+  }
+  .mission-grid .mission-item p {
+    font-size: 0.9rem;
+  }
+  .about-certification .certification-flex .certification-item p {
+    font-size: 0.9rem;
   }
 }
 

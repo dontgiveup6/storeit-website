@@ -20,6 +20,7 @@ body {
 }
 
 .btn {
+  // border-radius: 10px;
   background-color: $main-green-clr;
   border: none;
   color: #ffffff;
@@ -56,13 +57,17 @@ body {
     background-color: transparent;
     border: none;
     cursor: pointer;
-
+    font-weight: 700;
     &:hover {
       color: $hover-green-cl;
     }
   }
 
-  &:hover button {
+  // &:hover button {
+  //   display: block;
+  // }
+
+  .show-btn {
     display: block;
   }
 }
@@ -134,7 +139,7 @@ body {
   }
 
   &:hover {
-    box-shadow: 0px 5px 10px 1px $bg-dark-clr;
+    box-shadow: 0px 5px 10px -3px $bg-dark-clr;
   }
 }
 
@@ -143,6 +148,18 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  // .just-logo,
+  // .logo-fixed {
+  //   padding: 5px 10px 0;
+  //   border-radius: 20px;
+  //   transition: all 0.5s;
+  // }
+
+  // .just-logo:hover,
+  // .logo-fixed:hover {
+  //   box-shadow: 0px 0px 5px $main-green-clr;
+  // }
 
   .navbar {
     align-items: center;
@@ -172,6 +189,9 @@ body {
         color: $bg-lighter-clr;
         font-weight: 500;
       }
+      .on-page {
+        color: $main-green-clr;
+      }
 
       a:hover {
         color: $hover-green-cl;
@@ -186,7 +206,7 @@ body {
 
 .conclude {
   width: 100%;
-  background-color: $bg-lighter-clr;
+  background: linear-gradient($bg-lighter-clr, $bg-dark-clr);
   padding: 50px 0;
   display: flex;
   flex-direction: column;
@@ -223,6 +243,7 @@ body {
       color: $bg-lighter-clr;
       font-weight: 600;
       border: 0;
+      border-radius: 5px;
       padding: 5px 25px;
       text-decoration: none;
       cursor: pointer;

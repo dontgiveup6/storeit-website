@@ -1,7 +1,19 @@
 @media (max-width: 1300px) {
   .nav {
     .navbar {
-      display: none;
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      right: -200px;
+      height: 100vh;
+      width: 200px;
+      opacity: 0;
+      background-color: black;
+      z-index: 20;
+      transition: 1s all;
     }
   }
 
@@ -29,20 +41,22 @@
 
   .nav {
     .navbar-menu-clicked {
-      flex-direction: column;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100vh;
-      width: 100vw;
-      background-color: $bg-lighter-clr;
-      z-index: 20;
-      animation: menu-animation;
-      animation-duration: 0.4s;
-      animation-fill-mode: forwards;
+      opacity: 0.9;
+      right: 0;
+      // flex-direction: column;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // position: fixed;
+      // top: 0;
+      // right: 0;
+      // height: 100vh;
+      // width: 100vw;
+      // background-color: $bg-lighter-clr;
+      // z-index: 20;
+      // animation: menu-animation;
+      // animation-duration: 0.4s;
+      // animation-fill-mode: forwards;
     }
 
     .navbar {
@@ -65,6 +79,12 @@
   .service-overview {
     &-grid {
       grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .mission {
+    &-grid {
+      grid-gap: 40px;
     }
   }
 }
@@ -152,6 +172,16 @@
   .about-company {
     &-subtitle {
       max-width: 100%;
+    }
+  }
+
+  .mission {
+    &-grid {
+      grid-template-columns: 1fr;
+
+      .mission-item {
+        padding: 20px;
+      }
     }
   }
 }
@@ -272,6 +302,12 @@
       justify-content: center;
     }
   }
+
+  .about-certification {
+    .certification-flex {
+      flex-direction: column;
+    }
+  }
 }
 
 @media (max-width: 670px) {
@@ -332,6 +368,26 @@
             font-weight: 500;
             font-size: 0.8rem;
           }
+        }
+      }
+    }
+  }
+
+  .mission {
+    &-grid {
+      .mission-item {
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  .about-certification {
+    .certification-flex {
+      .certification-item {
+        p {
+          font-size: 0.9rem;
         }
       }
     }

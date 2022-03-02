@@ -54,6 +54,7 @@
 
 .services {
   height: 600px;
+  // background: linear-gradient(rgba(6, 6, 44, 0.96), $bg-dark-clr 40%);
   background-color: $bg-dark-clr;
 
   .container {
@@ -105,11 +106,18 @@
 }
 
 .process-one {
+  background: linear-gradient($bg-dark-clr, $bg-lighter-clr 40%);
   width: 100%;
-  max-width: 1300px;
+  // max-width: 1300px;
   margin: 0 auto;
-  padding: 10px;
+
   padding-bottom: 200px;
+
+  .container {
+    padding: 10px;
+    width: 100%;
+    max-width: 1300px;
+  }
 
   &-title {
     font-size: clamp(1.7rem, 3.7vw, 2.6rem);
@@ -269,7 +277,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 100px 0;
+  padding: 100px 0;
+  background: linear-gradient($bg-lighter-clr, $bg-dark-clr 80%);
 
   &-title {
     font-size: clamp(1.7rem, 3.7vw, 2.6rem);
@@ -374,7 +383,8 @@
   }
 
   .quality-section {
-    background-color: $bg-lighter-clr;
+    // background-color: $bg-lighter-clr;
+    background: linear-gradient($bg-dark-clr, $bg-lighter-clr);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -421,6 +431,7 @@
   }
   .confidentiality-section {
     background-color: #8b9197;
+    background: linear-gradient($bg-lighter-clr, #8b9197);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -468,7 +479,8 @@
 
 .know {
   padding: 100px 0;
-  background-color: #f6f6f6;
+  background: linear-gradient(#8b9197, #f6f6f6 40%);
+  // background-color: #f6f6f6;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -500,7 +512,9 @@
 }
 
 .help {
-  background-color: #ffffff;
+  // background-color: #ffffff;
+  background: linear-gradient(#f6f6f6, #ffffff 40%);
+
   width: 100%;
   padding: 100px 0;
   display: flex;
@@ -568,7 +582,7 @@
     height: 30px;
     width: 100%;
     border: 1px solid #cccbcb;
-    border-radius: 2px;
+    border-radius: 10px;
     padding: 0 5px;
     outline: none;
   }
@@ -580,11 +594,12 @@
   }
 
   input[type="button"] {
+    border-radius: 5px;
     background-color: $bg-lighter-clr;
     color: #ffffff;
     margin-top: 20px;
     height: auto;
-    width: 200px;
+    width: 150px;
     font-size: 1.1rem;
     font-weight: 500;
     padding: 10px 5px;

@@ -161,6 +161,12 @@
       }
     }
 
+    &-item:not(:nth-child(3)) {
+      ul {
+        margin: 20px 0;
+      }
+    }
+
     &-item:not(:first-child) {
       padding: 25px;
       background-color: #f6f6f6;
@@ -180,8 +186,8 @@
       }
 
       ul {
-        margin: 10px 0;
         list-style: none;
+
         li {
           position: relative;
           color: #000000;
@@ -255,30 +261,31 @@
     position: relative;
     justify-content: space-between;
 
-    .slider-buttons {
-      z-index: 3;
-      left: 50%;
-      top: 85%;
-      position: absolute;
-      transform: translateX(-50%);
+    // .slider-buttons {
+    //   z-index: 3;
+    //   left: 50%;
+    //   top: 85%;
+    //   position: absolute;
+    //   transform: translateX(-50%);
 
-      i {
-        cursor: pointer;
-        color: $main-green-clr;
-        font-size: 2rem;
-      }
+    //   i {
+    //     cursor: pointer;
+    //     color: $main-green-clr;
+    //     font-size: 2rem;
+    //   }
 
-      i:hover {
-        font-weight: 600;
-      }
-      .prev {
-        margin-right: 20px;
-      }
+    //   i:hover {
+    //     font-weight: 600;
+    //   }
+    //   .prev {
+    //     margin-right: 20px;
+    //   }
 
-      .next {
-        margin-left: 20px;
-      }
-    }
+    //   .next {
+    //     margin-left: 20px;
+    //   }
+    // }
+
     img {
       height: 100%;
     }
@@ -338,6 +345,7 @@
 
 .questions {
   background-color: #e9f1e6;
+  background: linear-gradient(#fff, #e9f1e6 30%);
   padding: 70px 0;
   width: 100%;
 
@@ -358,10 +366,10 @@
     &-questions {
       width: 100%;
 
-      border-bottom: 2px solid #000;
+      border-bottom: 1px solid #000;
 
       .faq-head {
-        padding: 20px 0;
+        padding: 20px 10px;
         cursor: pointer;
         position: relative;
 
@@ -370,14 +378,14 @@
         }
 
         h2 {
-          font-size: clamp(1.15rem, 1.7vw, 1.4rem);
+          font-size: clamp(1rem, 1.7vw, 1.3rem);
           font-weight: 600;
-          width: 85%;
+          width: 90%;
         }
       }
 
       .faq-head::after {
-        padding: 20px 0;
+        padding: 20px 10px;
         content: "\02795";
         position: absolute;
         overflow: hidden;
@@ -399,7 +407,7 @@
       .faq-body {
         width: 100%;
         display: block;
-        font-size: 0.95rem;
+        font-size: 0.9rem;
         font-weight: 500;
         padding: 20px 0;
       }

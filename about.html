@@ -19,8 +19,8 @@
         <i class="fa fa-globe"></i>
         <i class="fa fa-caret-down"></i>
       </div>
-      <button id="lang-en" class="lang-btn" data-locale="en">English</button>
-      <button id="lang-bg" class="lang-btn" data-locale="bg">Български</button>
+      <button id="lang-en" class="lang-btn" data-locale="en">EN</button>
+      <button id="lang-bg" class="lang-btn" data-locale="bg">BG</button>
     </ul>
 
     <div class="menu menu-fixed-in">
@@ -37,8 +37,8 @@
             ><img src="images/shared/fixed-logo.svg" alt="logo" srcset=""
           /></a>
           <nav class="navbar">
-            <a class="navbar-links" href="about.html">About Us</a>
-            <a class="navbar-links" href="service.html">Service</a>
+            <a class="navbar-links on-page" href="about.html">About Us</a>
+            <a class="navbar-links" href="service.html">Services</a>
             <a class="navbar-links" href="#requestPortal">Request Portal</a>
             <a class="navbar-links" href="#contact">Contact</a>
             <button class="btn">Lets Chat</button>
@@ -64,8 +64,19 @@
 
     <section class="about-company">
       <div class="container">
-        <h2 class="about-company-title">Company</h2>
-        <p class="about-company-subtitle">
+        <h2
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          class="about-company-title"
+        >
+          Company
+        </h2>
+        <p
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+          class="about-company-subtitle"
+        >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
           eveniet vero aliquam. Enim eligendi ipsum officia eius, necessitatibus
           omnis, rerum quasi iure temporibus magnam commodi quae ratione
@@ -81,7 +92,11 @@
 
     <section class="about-building">
       <div class="container">
-        <div class="about-building-holder">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          class="about-building-holder"
+        >
           <img src="images/about/building-left.png" alt="" />
           <div class="building-about about-building-right">
             <h1>Building</h1>
@@ -111,7 +126,12 @@
             </div>
           </div>
         </div>
-        <div class="about-building-holder">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+          class="about-building-holder"
+        >
           <div class="building-about about-building-left">
             <h1>Lorem Ipsum</h1>
             <p>
@@ -144,14 +164,26 @@
       </div>
     </section>
 
-    <!-- <section class="mission">
+    <section class="mission">
       <div class="container">
-        <h1 class="mission-title">Mission & Vision</h1>
-        <p class="mission-subtitle">
+        <h1 data-aos="fade-down" data-aos-duration="1000" class="mission-title">
+          Mission & Vision
+        </h1>
+        <p
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+          class="mission-subtitle"
+        >
           Proved Standarts are coming into Bulgaria
         </p>
         <div class="mission-grid">
-          <div class="mission-item">
+          <div
+            data-aos="flip-up"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+            class="mission-item"
+          >
             <img
               class="mission-logo-left"
               src="images/about/logo-left.PNG"
@@ -168,7 +200,12 @@
               is important.
             </p>
           </div>
-          <div class="mission-item">
+          <div
+            data-aos="flip-up"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+            class="mission-item"
+          >
             <img
               class="mission-logo-right"
               src="images/about/logo-right.png"
@@ -176,7 +213,7 @@
             />
             <img
               class="mission-img"
-              src="images/about/mission-left.png"
+              src="images/about/mission-right.png"
               alt=""
             />
             <p>
@@ -187,7 +224,56 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
+
+    <section class="about-certification">
+      <div class="container">
+        <h1
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          class="about-certification-title"
+        >
+          Certification
+        </h1>
+        <p
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+          class="about-certification-subtitle"
+        >
+          Lorem ipsum dolor sit amet.
+        </p>
+        <div class="certification-flex">
+          <div
+            data-aos="flip-down"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+            class="certification-item"
+          >
+            <img src="images/about/certified.png" alt="" />
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div
+            data-aos="flip-up"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+            class="certification-item"
+          >
+            <img src="images/about/certified.png" alt="" />
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div
+            data-aos="flip-down"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+            class="certification-item"
+          >
+            <img src="images/about/certified.png" alt="" />
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="conclude">
       <div class="container">
         <div class="conclude-logo">
@@ -195,7 +281,7 @@
         </div>
         <ul class="conclude-links">
           <a href="about.html">About Us</a>
-          <a href="service.html">Service</a>
+          <a href="service.html">Services</a>
           <a href="#requestPortal">Request Portal</a>
           <a href="#contact">Contact</a>
           <button class="demo">Request Demo</button>
