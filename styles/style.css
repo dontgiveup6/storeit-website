@@ -54,7 +54,7 @@ body {
       -ms-flex-align: end;
           align-items: flex-end;
   position: absolute;
-  top: 32px;
+  top: 34px;
   right: 13px;
   font-size: 1.3rem;
   opacity: 0.8;
@@ -85,11 +85,16 @@ body {
 }
 
 .locale-switcher-fixed-in i {
-  color: #4b535b;
+  color: #000;
+}
+
+.locale-switcher-fixed-in img {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 
 .locale-switcher-fixed-in button {
-  color: #4b535b;
+  color: #000;
 }
 
 .locale-switcher-clicked-fixed-in {
@@ -98,6 +103,11 @@ body {
 
 .locale-switcher-clicked-fixed-in i {
   color: #eee;
+}
+
+.locale-switcher-clicked-fixed-in img {
+  -webkit-filter: invert(0);
+          filter: invert(0);
 }
 
 .locale-switcher-clicked-fixed-in button {
@@ -125,7 +135,7 @@ body {
 }
 
 .menu-fixed-in i {
-  color: #4b535b;
+  color: #000;
 }
 
 .menu-clicked-fixed-in {
@@ -144,8 +154,6 @@ body {
   position: absolute;
   -webkit-transition: all 0.35s;
   transition: all 0.35s;
-  -webkit-box-shadow: 0px 15px 10px -15px #2d3233;
-          box-shadow: 0px 15px 10px -15px #2d3233;
 }
 
 .in-fixed .fixed {
@@ -153,11 +161,6 @@ body {
   width: 90%;
   margin: 0 auto;
   position: relative;
-}
-
-.in-fixed:hover {
-  -webkit-box-shadow: 0px 5px 10px -3px #2d3233;
-          box-shadow: 0px 5px 10px -3px #2d3233;
 }
 
 .nav {
@@ -201,7 +204,7 @@ body {
 }
 
 .fixed-in .fixed .nav a {
-  color: #4b535b;
+  color: #000;
   font-weight: 500;
 }
 
@@ -415,7 +418,6 @@ footer {
 
 .services-content {
   z-index: 1;
-  border-radius: 5px;
   background-color: #4b535b;
   padding: 30px;
 }
@@ -442,8 +444,7 @@ footer {
 }
 
 .process-one {
-  background: -webkit-gradient(linear, left top, left bottom, from(#2d3233), color-stop(40%, #4b535b));
-  background: linear-gradient(#2d3233, #4b535b 40%);
+  background-color: #4b535b;
   width: 100%;
   margin: 0 auto;
   padding-bottom: 200px;
@@ -467,16 +468,37 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  gap: 40px;
+}
+
+.process-one .row-1 {
+  margin-bottom: -30px;
+  gap: 80px;
 }
 
 .process-one .row-3 {
   margin-top: 120px;
 }
 
+.process-one .row-3 .img-van {
+  margin-left: 25px;
+  max-width: 100px;
+}
+
 .process-one .row-2 {
-  margin-top: -270px;
-  margin-left: 40%;
+  margin-top: -280px;
+  float: right;
+}
+
+.process-one .row-2 .img-laptop::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 30px;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: #64a84d;
 }
 
 .process-one .s-screen {
@@ -582,7 +604,7 @@ footer {
 
 .process-two .row-d .item .svg-b {
   position: absolute;
-  left: 100%;
+  left: 90%;
 }
 
 .process-two .row-d .item .svg-s {
@@ -614,22 +636,22 @@ footer {
 
 .item svg {
   position: absolute;
-  top: 60px;
-  left: 110px;
+  top: 40px;
+  left: 120px;
 }
 
 .item .curved-line {
   position: absolute;
-  top: 60px;
+  top: 40px;
   left: 160px;
-  width: 130%;
+  width: 140%;
 }
 
 .item .curved-line-2 {
   position: absolute;
-  top: 30px;
-  left: 150px;
-  width: 70px;
+  top: 0px;
+  left: 140px;
+  width: 90px;
 }
 
 .benefits {
@@ -645,8 +667,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   padding: 100px 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#4b535b), color-stop(80%, #2d3233));
-  background: linear-gradient(#4b535b, #2d3233 80%);
+  background-color: #4b535b;
 }
 
 .benefits-title {
@@ -803,8 +824,7 @@ footer {
 }
 
 .why-storeit .quality-section {
-  background: -webkit-gradient(linear, left top, left bottom, from(#2d3233), to(#4b535b));
-  background: linear-gradient(#2d3233, #4b535b);
+  background-color: #4b535b;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -874,8 +894,6 @@ footer {
 
 .why-storeit .confidentiality-section {
   background-color: #8b9197;
-  background: -webkit-gradient(linear, left top, left bottom, from(#4b535b), to(#8b9197));
-  background: linear-gradient(#4b535b, #8b9197);
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -944,8 +962,7 @@ footer {
 
 .know {
   padding: 100px 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#8b9197), color-stop(40%, #f6f6f6));
-  background: linear-gradient(#8b9197, #f6f6f6 40%);
+  background-color: #f6f6f6;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -998,8 +1015,7 @@ footer {
 }
 
 .help {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), color-stop(40%, #ffffff));
-  background: linear-gradient(#f6f6f6, #ffffff 40%);
+  background-color: #ffffff;
   width: 100%;
   padding: 100px 0;
   display: -webkit-box;
@@ -1068,6 +1084,17 @@ footer {
           align-items: center;
 }
 
+.help form .form-control {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .help form .form {
   width: 100%;
   display: -ms-grid;
@@ -1102,8 +1129,7 @@ footer {
   font-size: 1.1rem;
   height: 30px;
   width: 100%;
-  border: 1px solid #cccbcb;
-  border-radius: 10px;
+  border: 1px solid #bbbbbb;
   padding: 0 5px;
   outline: none;
 }
@@ -1112,15 +1138,15 @@ footer {
   margin-top: 5px;
   padding: 5px;
   height: 100px;
+  resize: none;
 }
 
 .help input[type="button"] {
-  border-radius: 5px;
   background-color: #4b535b;
   color: #ffffff;
   margin-top: 20px;
   height: auto;
-  width: 150px;
+  width: 170px;
   font-size: 1.1rem;
   font-weight: 500;
   padding: 10px 5px;
@@ -1336,7 +1362,6 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  border-radius: 20px;
   border-bottom: 4px solid #4b535b;
 }
 
@@ -1350,17 +1375,15 @@ footer {
 .mission-grid .mission-item .mission-logo-left {
   top: 0;
   left: 0;
-  height: 100%;
+  height: 90%;
   position: absolute;
-  border-radius: 20px;
 }
 
 .mission-grid .mission-item .mission-logo-right {
   top: 0;
   right: 0;
-  height: 100%;
+  height: 90%;
   position: absolute;
-  border-radius: 20px;
 }
 
 .mission-grid .mission-item .mission-img {
@@ -1408,7 +1431,7 @@ footer {
 }
 
 .about-certification .certification-flex .certification-item {
-  border-bottom: 4px solid #4b535b;
+  border-bottom: 4px solid #fffadc;
   background-color: #f6f6f6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1424,7 +1447,6 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 40px 30px;
-  border-radius: 20px;
 }
 
 .about-certification .certification-flex .certification-item img {
@@ -1438,7 +1460,11 @@ footer {
   text-align: center;
 }
 
-.about-certification .certification-flex .certification-item:not(:nth-child(2)) {
+.about-certification .certification-flex .certification-item:first-child {
+  border-bottom: 4px solid #4b535b;
+}
+
+.about-certification .certification-flex .certification-item:last-child {
   border-bottom: 4px solid #64a84d;
 }
 
@@ -1770,6 +1796,33 @@ footer {
           justify-content: space-between;
 }
 
+.service-clients .slider .slider-buttons {
+  z-index: 3;
+  left: 50%;
+  top: 85%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.service-clients .slider .slider-buttons i {
+  cursor: pointer;
+  color: #64a84d;
+  font-size: 2rem;
+}
+
+.service-clients .slider .slider-buttons i:hover {
+  font-weight: 600;
+}
+
+.service-clients .slider .slider-buttons .prev {
+  margin-right: 20px;
+}
+
+.service-clients .slider .slider-buttons .next {
+  margin-left: 20px;
+}
+
 .service-clients .slider img {
   height: 100%;
 }
@@ -1782,7 +1835,7 @@ footer {
 }
 
 .service-clients .slider .slide-content {
-  padding: 50px 0 0 40px;
+  padding: 70px 0 0 40px;
   position: absolute;
   top: 0;
   left: 0;
@@ -1835,8 +1888,6 @@ footer {
 
 .questions {
   background-color: #e9f1e6;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(30%, #e9f1e6));
-  background: linear-gradient(#fff, #e9f1e6 30%);
   padding: 70px 0;
   width: 100%;
 }
@@ -1879,11 +1930,12 @@ footer {
 
 .questions .faq-questions .faq-head::after {
   padding: 20px 10px;
-  content: "\02795";
+  content: "+";
+  font-size: 3rem;
+  font-weight: 600;
   position: absolute;
   overflow: hidden;
-  font-size: 1.2rem;
-  top: 0;
+  top: -17px;
   right: 0;
 }
 
@@ -1892,7 +1944,10 @@ footer {
 }
 
 .questions .faq .active .faq-head::after {
-  content: "\2796";
+  content: "-";
+  font-size: 3rem;
+  top: -20px;
+  right: 5px;
 }
 
 .questions .faq .active .faq-body {
@@ -1965,6 +2020,38 @@ footer {
   .locale-switcher {
     right: 70px;
   }
+  .process-one {
+    padding-bottom: 50px;
+  }
+  .process-one .row-1,
+  .process-one .row-2,
+  .process-one .row-3 {
+    display: none;
+  }
+  .process-one .s-screen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .process-two .row-d {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 60px;
+  }
+  .process-two .row-d .item .svg-b {
+    display: none;
+  }
+  .process-two .row-d .item .svg-s {
+    display: block;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+  }
   .why-storeit .security-section .security-grid {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
@@ -2005,38 +2092,6 @@ footer {
   }
   .services-content h3 {
     font-size: 1.1rem;
-  }
-  .process-one {
-    padding-bottom: 50px;
-  }
-  .process-one .row-1,
-  .process-one .row-2,
-  .process-one .row-3 {
-    display: none;
-  }
-  .process-one .s-screen {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .process-two .row-d {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 60px;
-  }
-  .process-two .row-d .item .svg-b {
-    display: none;
-  }
-  .process-two .row-d .item .svg-s {
-    display: block;
-    position: absolute;
-    top: 110%;
-    left: 50%;
   }
   .why-storeit .confidentiality-section .confidentiality-grid {
     width: 70%;

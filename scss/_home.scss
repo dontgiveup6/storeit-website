@@ -82,7 +82,7 @@
 
   &-content {
     z-index: 1;
-    border-radius: 5px;
+    // border-radius: 5px;
     background-color: $bg-lighter-clr;
     padding: 30px;
 
@@ -107,7 +107,8 @@
 }
 
 .process-one {
-  background: linear-gradient($bg-dark-clr, $bg-lighter-clr 40%);
+  background-color: $bg-lighter-clr;
+  // background: linear-gradient($bg-dark-clr, $bg-lighter-clr 40%);
   width: 100%;
   // max-width: 1300px;
   margin: 0 auto;
@@ -130,16 +131,42 @@
   .row-2,
   .row-3 {
     display: flex;
-    gap: 20px;
+    gap: 40px;
+  }
+
+  .row-1 {
+    margin-bottom: -30px;
+    gap: 80px;
   }
 
   .row-3 {
     margin-top: 120px;
+
+    // img {
+    //   max-width: 110px;
+    // }
+    .img-van {
+      margin-left: 25px;
+      max-width: 100px;
+    }
   }
 
   .row-2 {
-    margin-top: -270px;
-    margin-left: 40%;
+    margin-top: -280px;
+    float: right;
+
+    .img-laptop::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      left: 30px;
+      border-radius: 50%;
+      z-index: -1;
+      background-color: $main-green-clr;
+    }
+
+    // margin-left: 40%;
   }
 
   .s-screen {
@@ -225,7 +252,7 @@
 
       .svg-b {
         position: absolute;
-        left: 100%;
+        left: 90%;
       }
 
       .svg-s {
@@ -254,22 +281,22 @@
 
   svg {
     position: absolute;
-    top: 60px;
-    left: 110px;
+    top: 40px;
+    left: 120px;
   }
 
   .curved-line {
     position: absolute;
-    top: 60px;
+    top: 40px;
     left: 160px;
-    width: 130%;
+    width: 140%;
   }
 
   .curved-line-2 {
     position: absolute;
-    top: 30px;
-    left: 150px;
-    width: 70px;
+    top: 0px;
+    left: 140px;
+    width: 90px;
   }
 }
 
@@ -279,7 +306,8 @@
   flex-direction: column;
   align-items: center;
   padding: 100px 0;
-  background: linear-gradient($bg-lighter-clr, $bg-dark-clr 80%);
+  background-color: $bg-lighter-clr;
+  // background: linear-gradient($bg-lighter-clr, $bg-dark-clr 80%);
 
   &-title {
     font-size: clamp(1.7rem, 3.7vw, 2.6rem);
@@ -384,8 +412,8 @@
   }
 
   .quality-section {
-    // background-color: $bg-lighter-clr;
-    background: linear-gradient($bg-dark-clr, $bg-lighter-clr);
+    background-color: $bg-lighter-clr;
+    // background: linear-gradient($bg-dark-clr, $bg-lighter-clr);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -432,7 +460,7 @@
   }
   .confidentiality-section {
     background-color: #8b9197;
-    background: linear-gradient($bg-lighter-clr, #8b9197);
+    // background: linear-gradient($bg-lighter-clr, #8b9197);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -480,8 +508,8 @@
 
 .know {
   padding: 100px 0;
-  background: linear-gradient(#8b9197, #f6f6f6 40%);
-  // background-color: #f6f6f6;
+  // background: linear-gradient(#8b9197, #f6f6f6 40%);
+  background-color: #f6f6f6;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -513,8 +541,8 @@
 }
 
 .help {
-  // background-color: #ffffff;
-  background: linear-gradient(#f6f6f6, #ffffff 40%);
+  background-color: #ffffff;
+  // background: linear-gradient(#f6f6f6, #ffffff 40%);
 
   width: 100%;
   padding: 100px 0;
@@ -555,6 +583,12 @@
     justify-content: center;
     align-items: center;
 
+    .form-control {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
     .form {
       width: 100%;
       display: grid;
@@ -582,8 +616,8 @@
     font-size: 1.1rem;
     height: 30px;
     width: 100%;
-    border: 1px solid #cccbcb;
-    border-radius: 10px;
+    border: 1px solid #bbbbbb;
+    // border-radius: 10px;
     padding: 0 5px;
     outline: none;
   }
@@ -592,15 +626,16 @@
     margin-top: 5px;
     padding: 5px;
     height: 100px;
+    resize: none;
   }
 
   input[type="button"] {
-    border-radius: 5px;
+    // border-radius: 5px;
     background-color: $bg-lighter-clr;
     color: #ffffff;
     margin-top: 20px;
     height: auto;
-    width: 150px;
+    width: 170px;
     font-size: 1.1rem;
     font-weight: 500;
     padding: 10px 5px;

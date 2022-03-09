@@ -261,30 +261,30 @@
     position: relative;
     justify-content: space-between;
 
-    // .slider-buttons {
-    //   z-index: 3;
-    //   left: 50%;
-    //   top: 85%;
-    //   position: absolute;
-    //   transform: translateX(-50%);
+    .slider-buttons {
+      z-index: 3;
+      left: 50%;
+      top: 85%;
+      position: absolute;
+      transform: translateX(-50%);
 
-    //   i {
-    //     cursor: pointer;
-    //     color: $main-green-clr;
-    //     font-size: 2rem;
-    //   }
+      i {
+        cursor: pointer;
+        color: $main-green-clr;
+        font-size: 2rem;
+      }
 
-    //   i:hover {
-    //     font-weight: 600;
-    //   }
-    //   .prev {
-    //     margin-right: 20px;
-    //   }
+      i:hover {
+        font-weight: 600;
+      }
+      .prev {
+        margin-right: 20px;
+      }
 
-    //   .next {
-    //     margin-left: 20px;
-    //   }
-    // }
+      .next {
+        margin-left: 20px;
+      }
+    }
 
     img {
       height: 100%;
@@ -297,7 +297,7 @@
       height: 100%;
 
       &-content {
-        padding: 50px 0 0 40px;
+        padding: 70px 0 0 40px;
         position: absolute;
         top: 0;
         left: 0;
@@ -345,7 +345,7 @@
 
 .questions {
   background-color: #e9f1e6;
-  background: linear-gradient(#fff, #e9f1e6 30%);
+  // background: linear-gradient(#fff, #e9f1e6 30%);
   padding: 70px 0;
   width: 100%;
 
@@ -386,11 +386,14 @@
 
       .faq-head::after {
         padding: 20px 10px;
-        content: "\02795";
+        content: "+";
+        font-size: 3rem;
+        font-weight: 600;
+        // font-size: 1.2rem;
         position: absolute;
         overflow: hidden;
-        font-size: 1.2rem;
-        top: 0;
+
+        top: -17px;
         right: 0;
       }
 
@@ -401,7 +404,10 @@
 
     .active {
       .faq-head::after {
-        content: "\2796";
+        content: "-";
+        font-size: 3rem;
+        top: -20px;
+        right: 5px;
       }
 
       .faq-body {

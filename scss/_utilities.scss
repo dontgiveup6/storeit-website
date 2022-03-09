@@ -43,7 +43,7 @@ body {
   flex-direction: column;
   align-items: flex-end;
   position: absolute;
-  top: 32px;
+  top: 34px;
   right: 13px;
   font-size: 1.3rem;
   opacity: 0.8;
@@ -75,17 +75,28 @@ body {
 .locale-switcher-fixed-in {
   position: fixed;
   i {
-    color: $bg-lighter-clr;
+    // color: $bg-lighter-clr;
+    color: #000;
+  }
+
+  img {
+    filter: invert(100%);
   }
 
   button {
-    color: $bg-lighter-clr;
+    // color: $bg-lighter-clr;
+    color: #000;
   }
 }
+
 .locale-switcher-clicked-fixed-in {
   position: fixed;
   i {
     color: #eee;
+  }
+
+  img {
+    filter: invert(0);
   }
 
   button {
@@ -112,7 +123,8 @@ body {
 .menu-fixed-in {
   position: fixed;
   i {
-    color: $bg-lighter-clr;
+    // color: $bg-lighter-clr;
+    color: #000;
   }
 }
 .menu-clicked-fixed-in {
@@ -129,7 +141,7 @@ body {
   width: 100%;
   position: absolute;
   transition: all 0.35s;
-  box-shadow: 0px 15px 10px -15px $bg-dark-clr;
+  // box-shadow: 0px 15px 10px -15px $bg-dark-clr;
 
   .fixed {
     max-width: 1400px;
@@ -138,9 +150,9 @@ body {
     position: relative;
   }
 
-  &:hover {
-    box-shadow: 0px 5px 10px -3px $bg-dark-clr;
-  }
+  // &:hover {
+  //   box-shadow: 0px 5px 10px -3px $bg-dark-clr;
+  // }
 }
 
 .nav {
@@ -186,7 +198,8 @@ body {
   .fixed {
     .nav {
       a {
-        color: $bg-lighter-clr;
+        // color: $bg-lighter-clr;
+        color: #000;
         font-weight: 500;
       }
       .on-page {
