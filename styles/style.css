@@ -345,7 +345,7 @@ footer {
   z-index: 3;
   overflow: hidden;
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .video-container {
@@ -2321,7 +2321,7 @@ footer {
 
 @media (max-height: 750px) {
   .showcase {
-    height: auto;
+    min-height: 550px;
   }
   .sub-title {
     margin-bottom: 40px;

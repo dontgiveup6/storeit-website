@@ -400,7 +400,7 @@
 
 @media (max-height: 750px) {
   .showcase {
-    height: auto;
+    min-height: 550px;
   }
   .sub-title {
     margin-bottom: 40px;
