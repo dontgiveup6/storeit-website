@@ -247,34 +247,9 @@
   }
 
   .why-storeit {
-    .security-section {
-      .security-grid {
-        .security-item {
-          img {
-            height: 60px;
-          }
-        }
-      }
-    }
-
     .quality-section {
       .quality-grid {
         grid-template-columns: 1fr 1fr;
-        .quality-item {
-          img {
-            height: 60px;
-          }
-        }
-      }
-    }
-
-    .confidentiality-section {
-      .confidentiality-grid {
-        .confidentiality-item {
-          img {
-            height: 60px;
-          }
-        }
       }
     }
   }

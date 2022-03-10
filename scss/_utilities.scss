@@ -74,6 +74,7 @@ body {
 
 .locale-switcher-fixed-in {
   position: fixed;
+
   i {
     color: #000;
   }
@@ -216,7 +217,8 @@ body {
 
 .conclude {
   width: 100%;
-  background: linear-gradient($bg-lighter-clr, $bg-dark-clr);
+  background-color: $bg-lighter-clr;
+  // background: linear-gradient($bg-lighter-clr, $bg-dark-clr);
   padding: 50px 0;
   display: flex;
   flex-direction: column;

@@ -222,8 +222,7 @@ body {
 
 .conclude {
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#4b535b), to(#2d3233));
-  background: linear-gradient(#4b535b, #2d3233);
+  background-color: #4b535b;
   padding: 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -345,7 +344,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(6, 6, 44, 0.8);
+  background: rgba(3, 3, 58, 0.7);
 }
 
 .video-container video {
@@ -553,6 +552,12 @@ footer {
 .process-one .s-screen .item-s img {
   max-height: 70px;
   margin-bottom: 10px;
+  z-index: 2;
+}
+
+.process-one .s-screen .item-s .img-van {
+  margin-left: 25px;
+  max-width: 100px;
 }
 
 .process-one .s-screen .item-s .curved-line-s {
@@ -569,6 +574,17 @@ footer {
   left: 80px;
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+
+.process-one .s-screen .img-laptop::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 32px;
+  border-radius: 50%;
+  z-index: 1;
+  background-color: #64a84d;
 }
 
 .process-two {
@@ -815,7 +831,7 @@ footer {
 }
 
 .why-storeit .security-section .security-grid .security-item img {
-  height: 70px;
+  height: 50px;
 }
 
 .why-storeit .security-section .security-grid .security-item p {
@@ -883,11 +899,11 @@ footer {
 }
 
 .why-storeit .quality-section .quality-grid .quality-item img {
-  height: 70px;
+  height: 50px;
 }
 
 .why-storeit .quality-section .quality-grid .quality-item p {
-  color: var(--text-clr);
+  color: #fffadc;
   font-weight: 500;
   font-size: clamp(0.8rem, 1.6vw, 1rem);
 }
@@ -951,7 +967,7 @@ footer {
 }
 
 .why-storeit .confidentiality-section .confidentiality-grid .confidentiality-item img {
-  height: 70px;
+  height: 50px;
 }
 
 .why-storeit .confidentiality-section .confidentiality-grid .confidentiality-item p {
@@ -2187,18 +2203,9 @@ footer {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  .why-storeit .security-section .security-grid .security-item img {
-    height: 60px;
-  }
   .why-storeit .quality-section .quality-grid {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-  }
-  .why-storeit .quality-section .quality-grid .quality-item img {
-    height: 60px;
-  }
-  .why-storeit .confidentiality-section .confidentiality-grid .confidentiality-item img {
-    height: 60px;
   }
   .help form {
     width: 100%;

@@ -1,104 +1,104 @@
 AOS.init();
 
-const slides = document.querySelectorAll(".slide-content");
 const faq = document.querySelectorAll(".faq-head");
 
-const prev = document.querySelector(".prev");
-const next = document.querySelector(".next");
-const bulletPoints = document.querySelector(".bullet-points");
-let current = document.querySelector(".current");
-let pointsHTML = "";
-let auto = true;
-let intervalTime = 5000;
-let slideInterval, points, clickedPoint;
+// const slides = document.querySelectorAll(".slide-content");
 
-next.addEventListener("click", () => {
-  nextSlide();
-  clearInt();
-});
-prev.addEventListener("click", () => {
-  prevSlide();
-  clearInt();
-});
+// const prev = document.querySelector(".prev");
+// const next = document.querySelector(".next");
+// const bulletPoints = document.querySelector(".bullet-points");
+// let current = document.querySelector(".current");
+// let pointsHTML = "";
+// let auto = true;
+// let intervalTime = 5000;
+// let slideInterval, points, clickedPoint;
 
-const nextSlide = () => {
-  prepareDom();
+// next.addEventListener("click", () => {
+//   nextSlide();
+//   clearInt();
+// });
+// prev.addEventListener("click", () => {
+//   prevSlide();
+//   clearInt();
+// });
 
-  if (current.nextElementSibling) {
-    current.nextElementSibling.classList.add("current");
-  } else {
-    slides[0].classList.add("current");
-  }
+// const nextSlide = () => {
+//   prepareDom();
 
-  if (clickedPoint.nextElementSibling) {
-    clickedPoint.nextElementSibling.classList.add("clicked-point");
-  } else {
-    points[0].classList.add("clicked-point");
-  }
-};
+//   if (current.nextElementSibling) {
+//     current.nextElementSibling.classList.add("current");
+//   } else {
+//     slides[0].classList.add("current");
+//   }
 
-const prevSlide = () => {
-  prepareDom();
+//   if (clickedPoint.nextElementSibling) {
+//     clickedPoint.nextElementSibling.classList.add("clicked-point");
+//   } else {
+//     points[0].classList.add("clicked-point");
+//   }
+// };
 
-  if (current.previousElementSibling) {
-    current.previousElementSibling.classList.add("current");
-  } else {
-    slides[slides.length - 1].classList.add("current");
-  }
+// const prevSlide = () => {
+//   prepareDom();
 
-  if (clickedPoint.previousElementSibling) {
-    clickedPoint.previousElementSibling.classList.add("clicked-point");
-  } else {
-    points[points.length - 1].classList.add("clicked-point");
-  }
-};
+//   if (current.previousElementSibling) {
+//     current.previousElementSibling.classList.add("current");
+//   } else {
+//     slides[slides.length - 1].classList.add("current");
+//   }
 
-function prepareDom() {
-  clickedPoint = document.querySelector(".clicked-point");
-  current = document.querySelector(".current");
-  current.classList.remove("current");
-  clickedPoint.classList.remove("clicked-point");
-}
+//   if (clickedPoint.previousElementSibling) {
+//     clickedPoint.previousElementSibling.classList.add("clicked-point");
+//   } else {
+//     points[points.length - 1].classList.add("clicked-point");
+//   }
+// };
 
-function loading() {
-  slides.forEach(() => {
-    pointsHTML += `<div class="point"></div>`;
-  });
+// function prepareDom() {
+//   clickedPoint = document.querySelector(".clicked-point");
+//   current = document.querySelector(".current");
+//   current.classList.remove("current");
+//   clickedPoint.classList.remove("clicked-point");
+// }
 
-  bulletPoints.innerHTML = pointsHTML;
+// function loading() {
+//   slides.forEach(() => {
+//     pointsHTML += `<div class="point"></div>`;
+//   });
 
-  points = document.querySelectorAll(".point");
-  points[0].classList.add("clicked-point");
+//   bulletPoints.innerHTML = pointsHTML;
 
-  points.forEach((point, index) => {
-    point.addEventListener("click", (e) => {
-      points.forEach((pointt) => {
-        pointt.classList.remove("clicked-point");
-      });
-      point.classList.add("clicked-point");
-      slides.forEach((slide) => {
-        slide.classList.remove("current");
-      });
-      slides[index].classList.add("current");
+//   points = document.querySelectorAll(".point");
+//   points[0].classList.add("clicked-point");
 
-      clearInt();
-    });
-  });
-}
+//   points.forEach((point, index) => {
+//     point.addEventListener("click", (e) => {
+//       points.forEach((pointt) => {
+//         pointt.classList.remove("clicked-point");
+//       });
+//       point.classList.add("clicked-point");
+//       slides.forEach((slide) => {
+//         slide.classList.remove("current");
+//       });
+//       slides[index].classList.add("current");
 
-if (auto) {
-  slideInterval = setInterval(nextSlide, intervalTime);
-}
+//       clearInt();
+//     });
+//   });
+// }
+
+// if (auto) {
+//   slideInterval = setInterval(nextSlide, intervalTime);
+// }
+// function clearInt() {
+//   if (auto) {
+//     clearInterval(slideInterval);
+//     slideInterval = setInterval(nextSlide, intervalTime);
+//   }
+// }
 
 faq.forEach((q) => {
   q.addEventListener("click", () => {
     q.parentElement.classList.toggle("active");
   });
 });
-
-function clearInt() {
-  if (auto) {
-    clearInterval(slideInterval);
-    slideInterval = setInterval(nextSlide, intervalTime);
-  }
-}
