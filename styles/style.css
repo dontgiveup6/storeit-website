@@ -239,6 +239,35 @@ body {
           justify-content: center;
 }
 
+.conclude .conclude-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.conclude .conclude-logo .demo {
+  margin-top: 30px;
+  background-color: #fffadc;
+  color: #4b535b;
+  font-weight: 600;
+  font-size: 0.8rem;
+  border: 0;
+  border-radius: 0;
+  padding: 7px 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .conclude .container {
   display: -ms-grid;
   display: grid;
@@ -259,36 +288,27 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.conclude-links a:not(:last-child) {
+.conclude-links a {
   font-size: 0.8rem;
   text-decoration: none;
-  margin-bottom: 10px;
   font-weight: 400;
 }
 
-.conclude-links a:not(:last-child):hover {
+.conclude-links a:hover {
   color: #71b15c;
 }
 
-.conclude-links .demo {
-  margin-top: 10px;
-  background-color: #fffadc;
-  color: #4b535b;
-  font-weight: 600;
-  border: 0;
-  border-radius: 5px;
-  padding: 5px 25px;
-  text-decoration: none;
-  cursor: pointer;
+.conclude-links a:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .conclude .social {
@@ -2218,17 +2238,7 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .conclude .conclude-logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .conclude-links {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

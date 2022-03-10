@@ -225,6 +225,26 @@ body {
   align-items: center;
   justify-content: center;
 
+  .conclude-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .demo {
+      margin-top: 30px;
+      background-color: $text-clr;
+      color: $bg-lighter-clr;
+      font-weight: 600;
+      font-size: 0.8rem;
+      border: 0;
+      border-radius: 0;
+      padding: 7px 30px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -235,13 +255,12 @@ body {
   &-links {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
 
-    a:not(:last-child) {
+    a {
       font-size: 0.8rem;
       text-decoration: none;
-      margin-bottom: 10px;
       font-weight: 400;
 
       &:hover {
@@ -249,16 +268,8 @@ body {
       }
     }
 
-    .demo {
-      margin-top: 10px;
-      background-color: $text-clr;
-      color: $bg-lighter-clr;
-      font-weight: 600;
-      border: 0;
-      border-radius: 5px;
-      padding: 5px 25px;
-      text-decoration: none;
-      cursor: pointer;
+    a:not(:last-child) {
+      margin-bottom: 20px;
     }
   }
 
