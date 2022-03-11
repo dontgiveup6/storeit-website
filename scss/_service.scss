@@ -149,9 +149,13 @@
         font-size: clamp(1.5rem, 2.4vw, 1.9rem);
         width: 100%;
         font-weight: 700;
-        border: none;
+
         border-bottom: 3px solid;
         border-image: linear-gradient(to right, $main-green-clr, white) 1;
+        border-image-slice: 1;
+        border-top: none;
+        border-left: none;
+        border-right: none;
         padding: 0 50px 10px 0;
         margin-bottom: 10px;
       }

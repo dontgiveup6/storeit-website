@@ -1701,11 +1701,14 @@ footer {
   font-size: clamp(1.5rem, 2.4vw, 1.9rem);
   width: 100%;
   font-weight: 700;
-  border: none;
   border-bottom: 3px solid;
   -o-border-image: linear-gradient(to right, #64a84d, white) 1;
      border-image: -webkit-gradient(linear, left top, right top, from(#64a84d), to(white)) 1;
      border-image: linear-gradient(to right, #64a84d, white) 1;
+  border-image-slice: 1;
+  border-top: none;
+  border-left: none;
+  border-right: none;
   padding: 0 50px 10px 0;
   margin-bottom: 10px;
 }
