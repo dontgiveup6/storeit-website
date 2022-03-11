@@ -68,10 +68,11 @@
       max-width: 50%;
 
       .about-building-shield {
+        margin: 0 auto;
         margin-top: 20px;
-        width: 100%;
+        width: 90%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
 
         .shield {
           display: flex;

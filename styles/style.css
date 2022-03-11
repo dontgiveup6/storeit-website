@@ -201,6 +201,8 @@ body {
 .fixed-in {
   position: fixed;
   background-color: #ffffff;
+  -webkit-box-shadow: 0px 3px 12px #0000001a;
+          box-shadow: 0px 3px 12px #0000001a;
 }
 
 .fixed-in .fixed .nav a {
@@ -1286,14 +1288,15 @@ footer {
 }
 
 .about-building-holder .building-about .about-building-shield {
+  margin: 0 auto;
   margin-top: 20px;
-  width: 100%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .about-building-holder .building-about .about-building-shield .shield {
@@ -1550,7 +1553,7 @@ footer {
 .service-overview-para {
   color: #000;
   font-weight: 500;
-  font-size: clamp(1.1rem, 1.7vw, 1.3rem);
+  font-size: clamp(1.1rem, 1.7vw, 1.25rem);
   text-align: center;
   max-width: 800px;
   margin-bottom: 80px;
@@ -1597,7 +1600,7 @@ footer {
 }
 
 .service-overview-grid-item img {
-  height: 65px;
+  height: 55px;
   margin-bottom: 10px;
 }
 
@@ -1643,7 +1646,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  grid-gap: 30px;
+  grid-gap: 40px;
 }
 
 .service-services-grid-item {
@@ -1690,13 +1693,15 @@ footer {
 .service-services-grid-item:nth-child(3) ul {
   -ms-flex-item-align: start;
       align-self: flex-start;
+  margin-bottom: 20px;
 }
 
 .service-services-grid-item:first-child h3 {
   color: #2d3233;
-  font-size: clamp(1.3rem, 2vw, 1.7rem);
+  font-size: clamp(1.5rem, 2.4vw, 1.9rem);
   width: 100%;
   font-weight: 700;
+  border: none;
   border-bottom: 3px solid;
   -o-border-image: linear-gradient(to right, #64a84d, white) 1;
      border-image: -webkit-gradient(linear, left top, right top, from(#64a84d), to(white)) 1;
@@ -1716,7 +1721,7 @@ footer {
 }
 
 .service-services-grid-item:not(:first-child) {
-  padding: 25px;
+  padding: 35px 30px;
   background-color: #f6f6f6;
   -webkit-box-shadow: 10px 5px 7px #00000012;
           box-shadow: 10px 5px 7px #00000012;
@@ -1742,7 +1747,7 @@ footer {
 .service-services-grid-item:not(:first-child) ul li {
   position: relative;
   color: #000000;
-  margin: 10px 0 0 14px;
+  margin: 17px 0 0 14px;
   font-size: 0.85rem;
   font-weight: 600;
 }
@@ -2189,6 +2194,7 @@ footer {
     max-width: 100%;
   }
   .about-building-holder .building-about .about-building-shield {
+    width: 100%;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -2315,7 +2321,7 @@ footer {
     font-weight: 600;
   }
   .service-overview-grid-item img {
-    height: 55px;
+    height: 50px;
   }
 }
 
