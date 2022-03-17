@@ -601,9 +601,9 @@ footer {
 .process-one .s-screen .img-laptop::before {
   content: "";
   position: absolute;
-  width: 80px;
-  height: 80px;
-  left: 32px;
+  width: 70px;
+  height: 70px;
+  left: 37px;
   border-radius: 50%;
   z-index: 1;
   background-color: #64a84d;
@@ -2064,37 +2064,52 @@ footer {
   .locale-switcher {
     right: 70px;
   }
-  .process-one {
-    padding-bottom: 50px;
+  .process-one .item {
+    max-width: 100px;
+  }
+  .process-one .item img:first-child {
+    width: 100%;
+  }
+  .process-one .item p {
+    font-size: 0.8rem;
+  }
+  .process-one .item .curved-line-2 {
+    left: 100px;
+    width: 80px;
+  }
+  .process-one .container {
+    max-width: 850px;
+  }
+  .process-one .process1-1svg {
+    width: 50px;
+    margin-left: -30px;
+  }
+  .process-one .process1-2svg {
+    margin-left: -50px;
+  }
+  .process-one .svg-mid {
+    margin-left: -50px;
   }
   .process-one .row-1,
   .process-one .row-2,
   .process-one .row-3 {
-    display: none;
+    gap: 40px;
   }
-  .process-one .s-screen {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .process-one .row-2 {
+    margin-top: -300px;
+    margin-right: -50px;
   }
-  .process-two .row-d {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 60px;
+  .process-one .row-2 .img-laptop::before {
+    left: 10px;
+    width: 70px;
+    height: 70px;
   }
-  .process-two .row-d .item .svg-b {
-    display: none;
+  .process-one .row-3 {
+    margin-left: -50px;
   }
-  .process-two .row-d .item .svg-s {
-    display: block;
-    position: absolute;
-    top: 110%;
-    left: 50%;
+  .process-one .row-3 .img-van {
+    margin-left: 5px;
+    max-width: 85px;
   }
   .why-storeit .security-section .security-grid {
     -ms-grid-columns: 1fr 1fr 1fr;
@@ -2169,6 +2184,25 @@ footer {
   }
   .mission-grid .mission-item {
     padding: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .process-one {
+    padding-bottom: 50px;
+  }
+  .process-one .container {
+    max-width: 1300px;
+  }
+  .process-one .row-1,
+  .process-one .row-2,
+  .process-one .row-3 {
+    display: none;
+  }
+  .process-one .s-screen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -2262,6 +2296,28 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media (max-width: 690px) {
+  .process-two .row-d {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 60px;
+  }
+  .process-two .row-d .item .svg-b {
+    display: none;
+  }
+  .process-two .row-d .item .svg-s {
+    display: block;
+    position: absolute;
+    top: 110%;
+    left: 50%;
   }
 }
 

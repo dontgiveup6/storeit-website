@@ -110,9 +110,7 @@
   background-color: $bg-lighter-clr;
   // background: linear-gradient($bg-dark-clr, $bg-lighter-clr 40%);
   width: 100%;
-  // max-width: 1300px;
   margin: 0 auto;
-
   padding-bottom: 200px;
 
   .container {
@@ -228,9 +226,9 @@
     .img-laptop::before {
       content: "";
       position: absolute;
-      width: 80px;
-      height: 80px;
-      left: 32px;
+      width: 70px;
+      height: 70px;
+      left: 37px;
       border-radius: 50%;
       z-index: 1;
       background-color: $main-green-clr;

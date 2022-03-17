@@ -26,38 +26,74 @@
   }
 
   .process-one {
-    padding-bottom: 50px;
+    .item {
+      max-width: 100px;
+
+      img:first-child {
+        width: 100%;
+      }
+
+      p {
+        font-size: 0.8rem;
+      }
+
+      .curved-line-2 {
+        left: 100px;
+        width: 80px;
+      }
+    }
+
+    .container {
+      max-width: 850px;
+    }
+
+    .process1-1svg {
+      width: 50px;
+      margin-left: -30px;
+    }
+
+    .process1-2svg {
+      margin-left: -50px;
+    }
+
+    .svg-mid {
+      margin-left: -50px;
+    }
 
     .row-1,
     .row-2,
     .row-3 {
-      display: none;
+      gap: 40px;
     }
 
-    .s-screen {
-      display: flex;
-    }
-  }
+    .row-2 {
+      margin-top: -300px;
+      margin-right: -50px;
 
-  .process-two {
-    .row-d {
-      flex-direction: column;
-      align-items: center;
-      gap: 60px;
-
-      .item {
-        .svg-b {
-          display: none;
-        }
-
-        .svg-s {
-          display: block;
-          position: absolute;
-          top: 110%;
-          left: 50%;
-        }
+      .img-laptop::before {
+        left: 10px;
+        width: 70px;
+        height: 70px;
       }
     }
+
+    .row-3 {
+      margin-left: -50px;
+      .img-van {
+        margin-left: 5px;
+        max-width: 85px;
+      }
+    }
+
+    // .row-1,
+    // .row-2,
+    // .row-3 {
+    //   display: none;
+    // }
+
+    // .s-screen {
+    //   display: flex;
+    // }
   }
 
   .why-storeit {
@@ -186,6 +222,26 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .process-one {
+    padding-bottom: 50px;
+
+    .container {
+      max-width: 1300px;
+    }
+
+    .row-1,
+    .row-2,
+    .row-3 {
+      display: none;
+    }
+
+    .s-screen {
+      display: flex;
+    }
+  }
+}
+
 @media (max-width: 900px) {
   .service-clients {
     .slider {
@@ -279,6 +335,29 @@
   .about-certification {
     .certification-flex {
       flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 690px) {
+  .process-two {
+    .row-d {
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+
+      .item {
+        .svg-b {
+          display: none;
+        }
+
+        .svg-s {
+          display: block;
+          position: absolute;
+          top: 110%;
+          left: 50%;
+        }
+      }
     }
   }
 }
